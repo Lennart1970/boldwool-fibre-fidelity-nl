@@ -121,15 +121,14 @@ export default function Home() {
             Nog niet bewezen (volgende onderzoeksfase — subsidieerbaar)
           </p>
           <ul className="space-y-2">
-            <li>Slijtage / wear</li>
-            <li>Wasduurzaamheid</li>
-            <li>Hechting / adhesie tussen lagen</li>
-            <li>Treksterkte</li>
+            <li>Volgprocessen: cut/make, bonding, finishing met Havivank-viltstof</li>
+            <li>Slijtage / wear · wasduurzaamheid · hechting · treksterkte</li>
             <li>Vezel × textielcombinaties &amp; procesparameters</li>
             <li>Toepassingsgeschiktheid voor beoogde uses</li>
           </ul>
           <p className="mt-4 text-stone-600">
-            Open onderzoek blijft open — geen material-performance claims in deze draft.
+            Open onderzoek blijft open — geen material-performance claims; ambachtelijke
+            proef-eindproducten tonen richting, geen industriële doorzet.
           </p>
         </div>
       </Section>
@@ -144,10 +143,11 @@ export default function Home() {
         </p>
       </Section>
 
-      {/* 5 — BEWIJS / PROCES */}
+      {/* 5 — BEWIJS / PROCES (industrial POC = Havivank felt fabric) */}
       <Section n="BEWIJS" title="Proces-POC: Start → lijn → eindresultaat.">
         <p className="text-xl mb-8">
-          Industriële stills van de Fibre Fidelity-lijn (proces-POC bij Havivank).
+          Industriële stills van de Fibre Fidelity-lijn (proces-POC bij Havivank) — viltstof als
+          procesprincipe, geen eindproduct-claim.
         </p>
         <div className="space-y-6 mb-8">
           <Photo
@@ -185,8 +185,67 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* 6 — EKOO */}
-      <Section n="EKOO CE" title="Waarom dit past bij Circulaire economie." bg="bg-stone-50">
+      {/* 6 — PROEF-EINDPRODUCTEN (artisan trial; not factory throughput) */}
+      <Section n="PROEF" title="Proef-eindproducten" bg="bg-stone-50">
+        <p className="text-xl mb-2 text-stone-700 italic">
+          Ambachtelijk gemaakt — zelfde Fibre Fidelity-procesidee; géén industriële doorzet.
+        </p>
+        <p className="text-base text-stone-600 mb-8">
+          Artisan trial end products — handmatig door ambachtslieden, geen fabrieksdoorzet.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="bg-white border-2 border-stone-200 rounded-2xl p-5">
+            <h3 className="font-bold text-xl text-stone-900 mb-1">Sneaker Double Denim Stripe</h3>
+            <p className="text-sm text-amber-800 font-bold tracking-wide mb-4">
+              Proef-eindproduct · ambachtelijk
+            </p>
+            <div className="space-y-4">
+              <Photo
+                src={img('trial/IMG_9482.jpeg')}
+                alt="Proef-sneaker: paar Double Denim Stripe, grijs vilt"
+              />
+              <Photo
+                src={img('trial/IMG_9494.jpeg')}
+                alt="Proef-sneaker: frontaal, felted denim-oppervlak"
+              />
+              <Photo
+                src={img('trial/IMG_9491.jpeg')}
+                alt="Proef-sneakers: drie stilstanden, Double Denim Stripe"
+              />
+            </div>
+          </div>
+
+          <div className="bg-white border-2 border-amber-200 rounded-2xl p-5">
+            <h3 className="font-bold text-xl text-stone-900 mb-1">Bodywarmers</h3>
+            <p className="text-sm text-amber-800 font-bold tracking-wide mb-4">
+              Proef-eindproduct · ambachtelijk
+            </p>
+            <div className="space-y-4">
+              <Photo
+                src={img('trial/BoldWool_web.jpg')}
+                alt="Proef-bodywarmers: amber en stone in het veld"
+              />
+              <Photo
+                src={img('trial/BoldWool_web-3.jpg')}
+                alt="Proef-bodywarmers: amber-jacket op de voorgrond"
+              />
+              <Photo
+                src={img('trial/BoldWool_web-8.jpg')}
+                alt="Proef-bodywarmers: amber en stone, side-by-side"
+              />
+            </div>
+          </div>
+        </div>
+
+        <p className="text-base text-stone-600 italic border-t border-stone-200 pt-4">
+          Stof-route: industriële Havivank-viltstof → ambachtelijke eindproducten. Onderzoeksvraag:
+          volgprocessen + materiaaleigenschappen.
+        </p>
+      </Section>
+
+      {/* 7 — EKOO */}
+      <Section n="EKOO CE" title="Waarom dit past bij Circulaire economie.">
         <ul className="space-y-4 text-xl mb-8">
           <li>
             <strong>Thema:</strong> consumptiegoederen / textiel (circulaire innovatie)
@@ -210,14 +269,14 @@ export default function Home() {
         <p className="mt-6 text-stone-600">Hypothese voor adviseurs — ter toetsing, geen vastgesteld kader.</p>
       </Section>
 
-      {/* 7 — PARTNERS */}
-      <Section n="PARTNERS" title="Partnerlogica.">
+      {/* 8 — PARTNERS */}
+      <Section n="PARTNERS" title="Partnerlogica." bg="bg-stone-50">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-6">
             <p className="font-bold text-xl mb-2">Boldwool</p>
             <p>Bewezen procesprincipe + industriële trial-ervaring.</p>
           </div>
-          <div className="bg-stone-50 border-2 border-stone-200 rounded-2xl p-6">
+          <div className="bg-white border-2 border-stone-200 rounded-2xl p-6">
             <p className="font-bold text-xl mb-2">Onderzoek / design (bijv. Elisa)</p>
             <p>Onderzoekt materiaal- en designgevolgen — niet vanaf nul.</p>
           </div>
@@ -227,7 +286,7 @@ export default function Home() {
         </p>
       </Section>
 
-      {/* 8 — VRAAG */}
+      {/* 9 — VRAAG */}
       <Section n="VRAAG" title="Vraag aan adviseurs." bg="bg-green-50">
         <ol className="space-y-4 text-xl">
           <li className="bg-white rounded-2xl p-5 shadow-sm">
@@ -248,7 +307,7 @@ export default function Home() {
         </p>
       </Section>
 
-      {/* 9 — FOOTER */}
+      {/* 10 — FOOTER */}
       <footer className="bg-stone-900 text-white py-16 px-5 text-center">
         <p className="text-3xl font-extrabold mb-4">Draft voor adviseurs.</p>
         <p className="text-xl text-stone-300 mb-2">
@@ -257,8 +316,8 @@ export default function Home() {
         </p>
         <p className="text-amber-400 text-xl font-bold">boldwool.com</p>
         <p className="text-stone-500 text-sm mt-6">
-          Lennart van Bolderick — Boldwool · Bolderick Beheer B.V. · Foto&apos;s: eigen industriële
-          proeven (Havivank)
+          Lennart van Bolderick — Boldwool · Bolderick Beheer B.V. · Foto&apos;s: industriële
+          proeven (Havivank) + ambachtelijke proef-eindproducten
         </p>
       </footer>
     </main>

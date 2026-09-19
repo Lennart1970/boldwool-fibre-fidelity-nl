@@ -11,6 +11,11 @@ amber/stone palette, `Section` / `Photo` / `BigNumber` patterns.
 Copy source: advisor one-pager (Fibre Fidelity / textile upcycling). Site language is Dutch for
 advisor-facing UI; the locked NL claim paragraph is verbatim.
 
+**Claim ladder (do not blur):**
+1. Industrial POC — Havivank line → Fibre Fidelity felt fabric (process principle)
+2. Trial end products — artisan sneaker + bodywarmers (proef-eindproducten; not factory throughput)
+3. Open research — follow-up make processes + material performance (abrasion/wash/bond/tensile)
+
 ## Develop
 
 ```bash
