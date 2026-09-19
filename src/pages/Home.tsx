@@ -185,8 +185,63 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* 6 — PROEF-EINDPRODUCTEN (artisan trial; not factory throughput) */}
-      <Section n="PROEF" title="Proef-eindproducten" bg="bg-stone-50">
+      {/* 6 — BEGRIPPEN (glossary — NL 6-regel blok verbatim) */}
+      <Section n="BEGRIPPEN" title="Begrippen — FeltFabriCk / Fibre Fidelity" bg="bg-stone-50">
+        <p className="text-base text-stone-600 italic mb-6">
+          Preserve before you recycle. / Behoud vóór je recycleert.
+        </p>
+        <dl className="space-y-4 text-lg">
+          <div>
+            <dt className="font-bold text-stone-900 inline">Fibre Fidelity</dt>
+            <dd className="inline">
+              {' '}
+              — we behouden bestaande textielstructuur zo lang mogelijk; vezel-recycling is de
+              laatste stap.
+            </dd>
+          </div>
+          <div>
+            <dt className="font-bold text-stone-900 inline">FeltFabriCk</dt>
+            <dd className="inline">
+              {' '}
+              — lokale wol wordt door naaldvilten mechanisch verbonden met een bestaande geweven
+              drager (denim, jute, canvas).
+            </dd>
+          </div>
+          <div>
+            <dt className="font-bold text-stone-900 inline">Hybride materiaal</dt>
+            <dd className="inline">
+              {' '}
+              — wol op textiel, zonder lijm: een droog mechanisch proces.
+            </dd>
+          </div>
+          <div>
+            <dt className="font-bold text-stone-900 inline">Minimum intervention</dt>
+            <dd className="inline">
+              {' '}
+              — alleen bewerken wat nodig is voor de volgende functie.
+            </dd>
+          </div>
+          <div>
+            <dt className="font-bold text-stone-900 inline">Proef-eindproducten</dt>
+            <dd className="inline">
+              {' '}
+              — artisan sneakers en bodywarmers tonen toepassing; de industriële POC is het
+              viltweefsel van de Havivank-lijn.
+            </dd>
+          </div>
+          <div>
+            <dt className="font-bold text-stone-900 inline">Open vraag</dt>
+            <dd className="inline">
+              {' '}
+              — kan dat industriële viltweefsel betrouwbaar de vervolgprocessen in (confectie,
+              hechting, wassen, slijtage)?
+            </dd>
+          </div>
+        </dl>
+      </Section>
+
+      {/* 7 — PROEF-EINDPRODUCTEN (artisan trial; not factory throughput) */}
+      <Section n="PROEF" title="Proef-eindproducten">
         <p className="text-xl mb-2 text-stone-700 italic">
           Ambachtelijk gemaakt — zelfde Fibre Fidelity-procesidee; géén industriële doorzet.
         </p>
@@ -244,8 +299,8 @@ export default function Home() {
         </p>
       </Section>
 
-      {/* 7 — EKOO */}
-      <Section n="EKOO CE" title="Waarom dit past bij Circulaire economie.">
+      {/* 8 — EKOO */}
+      <Section n="EKOO CE" title="Waarom dit past bij Circulaire economie." bg="bg-stone-50">
         <ul className="space-y-4 text-xl mb-8">
           <li>
             <strong>Thema:</strong> consumptiegoederen / textiel (circulaire innovatie)
@@ -269,8 +324,8 @@ export default function Home() {
         <p className="mt-6 text-stone-600">Hypothese voor adviseurs — ter toetsing, geen vastgesteld kader.</p>
       </Section>
 
-      {/* 8 — PARTNERS */}
-      <Section n="PARTNERS" title="Partnerlogica." bg="bg-stone-50">
+      {/* 9 — PARTNERS */}
+      <Section n="PARTNERS" title="Partnerlogica.">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-6">
             <p className="font-bold text-xl mb-2">Boldwool</p>
@@ -286,7 +341,7 @@ export default function Home() {
         </p>
       </Section>
 
-      {/* 9 — VRAAG */}
+      {/* 10 — VRAAG */}
       <Section n="VRAAG" title="Vraag aan adviseurs." bg="bg-green-50">
         <ol className="space-y-4 text-xl">
           <li className="bg-white rounded-2xl p-5 shadow-sm">
@@ -307,7 +362,7 @@ export default function Home() {
         </p>
       </Section>
 
-      {/* 10 — FOOTER */}
+      {/* 11 — FOOTER */}
       <footer className="bg-stone-900 text-white py-16 px-5 text-center">
         <p className="text-3xl font-extrabold mb-4">Draft voor adviseurs.</p>
         <p className="text-xl text-stone-300 mb-2">
