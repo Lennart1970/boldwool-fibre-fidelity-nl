@@ -54,7 +54,7 @@ function Card({
   const border = accent ? `border-l-[5px] ${accentStyles[accent].border}` : ''
   return (
     <div
-      className={`rounded-card border-2 border-paper-line bg-card p-[22px] shadow-card md:p-[26px] ${border} ${className}`}
+      className={`rounded-card border-2 border-paper-line bg-card p-[22px] shadow-lift md:p-[26px] ${border} ${className}`}
     >
       {children}
     </div>
@@ -88,7 +88,7 @@ function Section({
 
 function Photo({ src, alt, caption }: { src: string; alt: string; caption?: string }) {
   return (
-    <figure className="overflow-hidden rounded-card border-2 border-paper-line bg-paper-soft shadow-card">
+    <figure className="overflow-hidden rounded-card border-2 border-paper-line bg-paper-soft shadow-lift">
       <img src={src} alt={alt} className="w-full object-cover" loading="lazy" />
       {caption && (
         <figcaption className="px-4 py-2.5 text-sm text-ink-muted">{caption}</figcaption>
@@ -125,7 +125,7 @@ export default function Home() {
         <p className="m-0 text-[1.05rem] font-bold tracking-[-0.01em] text-ink">
           Boldwool<span className="mx-[3px] text-clay">·</span>Fibre Fidelity
         </p>
-        <span className="inline-flex items-center gap-2 rounded-full border border-forest/25 bg-card px-3.5 py-1.5 text-[0.9rem] font-semibold text-forest shadow-card">
+        <span className="inline-flex items-center gap-2 rounded-full border border-forest/25 bg-card px-3.5 py-1.5 text-[0.9rem] font-semibold text-forest shadow-lift">
           <span
             className="h-2 w-2 rounded-full bg-forest shadow-[0_0_0_4px_rgba(33,64,51,.20)]"
             aria-hidden="true"
@@ -139,7 +139,7 @@ export default function Home() {
         <img
           src={img('20250312_105054.jpg')}
           alt="Denimstukken en witte vezels op de industriële naaldviltlijn"
-          className="aspect-video w-full bg-paper-soft object-cover min-[720px]:rounded-3xl min-[720px]:border-2 min-[720px]:border-paper-line min-[720px]:shadow-card"
+          className="aspect-video w-full bg-paper-soft object-cover min-[720px]:rounded-3xl min-[720px]:border-2 min-[720px]:border-paper-line min-[720px]:shadow-lift"
           loading="eager"
           fetchPriority="high"
           width={1920}
@@ -457,7 +457,7 @@ export default function Home() {
 
       {/* 10 — VRAAG (dark green highlight block) */}
       <Section n="VRAAG" title="Vraag aan adviseurs." accent="forest">
-        <div className="rounded-card border border-forest-deep/40 bg-gradient-to-br from-forest to-forest-deep p-7 text-[#f3efe6] shadow-card md:p-10">
+        <div className="rounded-card border border-forest-deep/40 bg-gradient-to-br from-forest to-forest-deep p-7 text-[#f3efe6] shadow-lift md:p-10">
           <ol className="m-0 list-none space-y-3 p-0">
             {[
               'Bevestig EKOO CE als primaire pot voor de material-performance-fase',
