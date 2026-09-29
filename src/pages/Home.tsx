@@ -135,11 +135,11 @@ export default function Home() {
       </div>
 
       {/* Hero media — industrial felt line (full-bleed mobile, rounded in column on desktop) */}
-      <figure className="relative -mx-5 mt-2 md:mx-0 md:mt-3.5">
+      <figure className="relative -mx-5 mt-2 min-[720px]:mx-0 min-[720px]:mt-3.5">
         <img
           src={img('20250312_105054.jpg')}
           alt="Denimstukken en witte vezels op de industriële naaldviltlijn"
-          className="aspect-video w-full bg-paper-soft object-cover md:rounded-3xl md:border md:border-paper-line md:shadow-card"
+          className="aspect-video w-full bg-paper-soft object-cover min-[720px]:rounded-3xl min-[720px]:border min-[720px]:border-paper-line min-[720px]:shadow-card"
           loading="eager"
           fetchPriority="high"
           width={1920}
