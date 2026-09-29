@@ -127,7 +127,7 @@ export default function Home() {
         </p>
         <span className="inline-flex items-center gap-2 rounded-full border border-forest/25 bg-card px-3.5 py-1.5 text-[0.9rem] font-semibold text-forest shadow-card">
           <span
-            className="h-2 w-2 rounded-full bg-forest shadow-[0_0_0_4px_rgba(38,74,59,.18)]"
+            className="h-2 w-2 rounded-full bg-forest shadow-[0_0_0_4px_rgba(33,64,51,.20)]"
             aria-hidden="true"
           />
           Dossier EKOO · adviseurs
