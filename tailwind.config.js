@@ -6,30 +6,30 @@ export default {
       colors: {
         paper: {
           DEFAULT: '#f6f1e8',
-          soft: '#efe7da',
-          line: '#e4dccd',
+          soft: '#e6dcc9',
+          line: '#b7a68d',
         },
         card: '#fffdf9',
         ink: {
-          DEFAULT: '#1f2a24',
-          muted: '#5d6760',
+          DEFAULT: '#0f1612',
+          muted: '#33403a',
         },
         forest: {
-          DEFAULT: '#2f5d4a',
-          deep: '#244a3b',
-          soft: '#e6efe9',
+          DEFAULT: '#214033',
+          deep: '#0f221a',
+          soft: '#c5d8cc',
         },
         clay: {
-          DEFAULT: '#b86a3c',
-          soft: '#f3e6dc',
+          DEFAULT: '#9a5229',
+          soft: '#e8d0bc',
         },
         slate: {
-          soft: '#e8eef2',
-          accent: '#3d5a73',
+          soft: '#d2dde6',
+          accent: '#28405a',
         },
         plum: {
-          soft: '#efe6ea',
-          accent: '#6b4556',
+          soft: '#e2ced7',
+          accent: '#4f2e3e',
         },
       },
       fontFamily: {
@@ -44,7 +44,7 @@ export default {
         ],
       },
       boxShadow: {
-        card: '0 1px 2px rgba(31,42,36,.05), 0 8px 24px rgba(31,42,36,.06)',
+        lift: '0 1px 2px rgba(15,22,18,.10), 0 12px 30px rgba(15,22,18,.12)',
       },
       borderRadius: {
         card: '20px',
