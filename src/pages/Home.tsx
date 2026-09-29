@@ -51,7 +51,7 @@ function Card({
   className?: string
   accent?: Accent
 }) {
-  const border = accent ? `border-l-4 ${accentStyles[accent].border}` : ''
+  const border = accent ? `border-l-[5px] ${accentStyles[accent].border}` : ''
   return (
     <div
       className={`rounded-card border border-paper-line bg-card p-[22px] shadow-card md:p-[26px] ${border} ${className}`}
@@ -125,23 +125,25 @@ export default function Home() {
         <p className="m-0 text-[1.05rem] font-bold tracking-[-0.01em] text-ink">
           Boldwool<span className="mx-[3px] text-clay">·</span>Fibre Fidelity
         </p>
-        <span className="inline-flex items-center gap-2 rounded-full border border-paper-line bg-card px-3.5 py-1.5 text-[0.9rem] font-semibold text-forest shadow-card">
+        <span className="inline-flex items-center gap-2 rounded-full border border-forest/25 bg-card px-3.5 py-1.5 text-[0.9rem] font-semibold text-forest shadow-card">
           <span
-            className="h-2 w-2 rounded-full bg-[#3f9a6e] shadow-[0_0_0_4px_rgba(63,154,110,.15)]"
+            className="h-2 w-2 rounded-full bg-forest shadow-[0_0_0_4px_rgba(38,74,59,.18)]"
             aria-hidden="true"
           />
           Dossier EKOO · adviseurs
         </span>
       </div>
 
-      {/* Hero media — real industrial photo */}
+      {/* Hero media — industrial felt line (full-bleed mobile, rounded in column on desktop) */}
       <figure className="relative -mx-5 mt-2 md:mx-0 md:mt-3.5">
         <img
-          src={img('Start.jpg')}
-          alt="Start: denim en textiel op de industriële lijn bij Havivank"
+          src={img('20250312_105054.jpg')}
+          alt="Denimstukken en witte vezels op de industriële naaldviltlijn"
           className="aspect-video w-full bg-paper-soft object-cover md:rounded-3xl md:border md:border-paper-line md:shadow-card"
           loading="eager"
           fetchPriority="high"
+          width={1920}
+          height={1080}
         />
       </figure>
 
@@ -224,7 +226,7 @@ export default function Home() {
       {/* 4 — CLAIM (locked NL) */}
       <Section n="CLAIM" title="Voorstellen-formulering (NL, vast)." accent="clay">
         <Card>
-          <blockquote className="m-0 border-l-4 border-clay py-1 pl-4 text-[clamp(1.05rem,3.5vw,1.2rem)] font-semibold leading-relaxed tracking-[-0.01em] text-ink">
+          <blockquote className="m-0 border-l-[5px] border-clay py-1 pl-4 text-[clamp(1.05rem,3.5vw,1.2rem)] font-semibold leading-relaxed tracking-[-0.01em] text-ink">
             {LOCKED_CLAIM_NL}
           </blockquote>
           <p className="mb-0 mt-4 text-sm text-ink-muted">
@@ -455,7 +457,7 @@ export default function Home() {
 
       {/* 10 — VRAAG (dark green highlight block) */}
       <Section n="VRAAG" title="Vraag aan adviseurs." accent="forest">
-        <div className="rounded-card border-0 bg-gradient-to-br from-forest to-forest-deep p-7 text-[#f3efe6] shadow-card md:p-10">
+        <div className="rounded-card border border-forest-deep/40 bg-gradient-to-br from-forest to-forest-deep p-7 text-[#f3efe6] shadow-card md:p-10">
           <ol className="m-0 list-none space-y-3 p-0">
             {[
               'Bevestig EKOO CE als primaire pot voor de material-performance-fase',
@@ -465,9 +467,9 @@ export default function Home() {
             ].map((item, i) => (
               <li
                 key={i}
-                className="relative rounded-card border border-white/15 bg-white/10 px-5 py-4 pl-16 text-[#dfe8e2]"
+                className="relative rounded-card border border-white/20 bg-black/15 px-5 py-4 pl-16 text-[#e8efe9]"
               >
-                <span className="absolute left-[18px] top-[17px] grid h-8 w-8 place-items-center rounded-full bg-white text-[0.95rem] font-bold text-forest">
+                <span className="absolute left-[18px] top-[17px] grid h-8 w-8 place-items-center rounded-full bg-white text-[0.95rem] font-bold text-forest-deep">
                   {i + 1}
                 </span>
                 <span className="font-semibold text-white">{item}</span>
