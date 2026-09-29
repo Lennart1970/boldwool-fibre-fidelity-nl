@@ -54,7 +54,7 @@ function Card({
   const border = accent ? `border-l-[5px] ${accentStyles[accent].border}` : ''
   return (
     <div
-      className={`rounded-card border border-paper-line bg-card p-[22px] shadow-card md:p-[26px] ${border} ${className}`}
+      className={`rounded-card border-2 border-paper-line bg-card p-[22px] shadow-card md:p-[26px] ${border} ${className}`}
     >
       {children}
     </div>
@@ -88,7 +88,7 @@ function Section({
 
 function Photo({ src, alt, caption }: { src: string; alt: string; caption?: string }) {
   return (
-    <figure className="overflow-hidden rounded-card border border-paper-line bg-paper-soft shadow-card">
+    <figure className="overflow-hidden rounded-card border-2 border-paper-line bg-paper-soft shadow-card">
       <img src={src} alt={alt} className="w-full object-cover" loading="lazy" />
       {caption && (
         <figcaption className="px-4 py-2.5 text-sm text-ink-muted">{caption}</figcaption>
@@ -139,7 +139,7 @@ export default function Home() {
         <img
           src={img('20250312_105054.jpg')}
           alt="Denimstukken en witte vezels op de industriële naaldviltlijn"
-          className="aspect-video w-full bg-paper-soft object-cover min-[720px]:rounded-3xl min-[720px]:border min-[720px]:border-paper-line min-[720px]:shadow-card"
+          className="aspect-video w-full bg-paper-soft object-cover min-[720px]:rounded-3xl min-[720px]:border-2 min-[720px]:border-paper-line min-[720px]:shadow-card"
           loading="eager"
           fetchPriority="high"
           width={1920}
