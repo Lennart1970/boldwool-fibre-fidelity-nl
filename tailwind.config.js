@@ -31,6 +31,7 @@ export default {
           soft: '#e2ced7',
           accent: '#4f2e3e',
         },
+      },
       fontFamily: {
         sans: [
           'system-ui',
